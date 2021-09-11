@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(assets/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+ul{
+    text-align:center;
+}
+ul li{
+    display: inline-block;
+    width: 200px;
+    color:wheat;
+}
+.progress i{
+    font-size: 50px;
+    margin: 300px auto;
+
+}
