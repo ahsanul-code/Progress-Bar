@@ -7,6 +7,8 @@ body{
     background-image: url(assets/background.jpg);
     background-size: cover;
     background-position: center;
+    font-family: sans-serif;
+    color: #01ab97;
 }
 ul{
     text-align:center;
@@ -14,10 +16,19 @@ ul{
 ul li{
     display: inline-block;
     width: 200px;
-    color:wheat;
 }
-.progress i{
-    font-size: 50px;
+ul li .fas{
+    background: #ccc;
+    width: 16px;
+    height: 16px;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+}
+.progress{
     margin: 300px auto;
-
+}
+.progress img{
+    width: 80px;
+    margin-bottom: 20px;
 }
