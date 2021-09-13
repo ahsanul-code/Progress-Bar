@@ -10,25 +10,57 @@ body{
     font-family: sans-serif;
     color: #01ab97;
 }
-ul{
-    text-align:center;
-}
-ul li{
-    display: inline-block;
-    width: 200px;
-}
-ul li .fas{
-    background: #ccc;
-    width: 16px;
-    height: 16px;
-    color: #fff;
-    border-radius: 50%;
-    padding: 5px;
-}
 .progress{
     margin: 300px auto;
 }
 .progress img{
     width: 80px;
     margin-bottom: 20px;
+}
+ul{
+    text-align:center;
+}
+ul li{
+    display: inline-block;
+    width: 200px;
+    position: relative;
+}
+ul li .fas{
+    background-color: #ccc;
+    /* width: 16px;
+    height: 16px; */
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+ul li .fas::after{
+    content: "";
+    background-color: #ccc;
+    height: 5px;
+    width: 205px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 115px;
+    z-index: -1;
+}
+ul li:nth-of-type(3) .fas{
+    background-color: #148e14;
+}
+ul li:nth-of-type(3) .fas::after{
+    background-color: #148e14;
+}
+ul li:nth-of-type(1) .fas, ul li:nth-of-type(2) .fas{
+    background-color: #60aa97;
+}
+ul li:nth-of-type(1) .fas::after, ul li:nth-of-type(2) .fas::after{
+    background-color: #60aa97;
+}
+ul li:nth-of-type(1) .fas::after{
+    width: 105px;
+    left: 100px;
+}
+ul li:nth-of-type(5) .fas::after{
+    width: 105px;
 }
